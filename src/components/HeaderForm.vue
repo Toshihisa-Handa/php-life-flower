@@ -34,6 +34,12 @@
       </v-btn>
      </router-link>
 
+      <!-- <router-link active-class="current" v-bind:to="{ name: 'Register'}">
+      <v-btn icon>
+        <v-icon>mdi-login</v-icon>
+      </v-btn>
+     </router-link> -->
+
     </v-app-bar>
   </div>
   

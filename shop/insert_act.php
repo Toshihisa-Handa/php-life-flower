@@ -46,7 +46,7 @@ if($status==false){
 
 }else{
 
-  redirect("login.php");
+  redirect("../App.vue");
 
 
 

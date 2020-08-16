@@ -40,6 +40,14 @@ Vue.use(VueRouter)
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "TopCarousel" */ '../views/Login.vue')
   },
+  {
+    path: '/register',
+    name: 'Register',
+    // route level code-splitting
+    // this generates a separate chunk (TopCarousel.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "TopCarousel" */ '../views/Register.vue')
+  },
   
 ]
 

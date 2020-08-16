@@ -1,6 +1,16 @@
 <template>
   <v-card>
-    <v-card-title>ログイン</v-card-title>
+   <div class='title'>
+    <p>ログイン</p>
+     <v-spacer></v-spacer>
+     <router-link active-class="current " v-bind:to="{ name: 'Register'}">
+    <v-btn color="green">
+             <v-icon>新規登録→</v-icon>
+    </v-btn>
+   </router-link>
+
+    </div>
+    <form action="">
     <v-card-text>
      <v-text-field
         v-modle="inputData.email"
@@ -18,10 +28,19 @@
     </v-card-text>
     <v-card-actions>
       <v-spacer></v-spacer>
-      <v-btn @click='login' text>ログインする</v-btn>
+      <v-btn type='submit' @click='login' text>ログインする</v-btn>
     </v-card-actions>
+    </form>
   </v-card>
 </template>
+
+<style scoped>
+  .title{
+    display:flex;
+  }
+</style>
+
+
 
 <script>
 export default {
@@ -36,6 +55,8 @@ export default {
     login() {
       console.log(this.inputData);
     },
+
   },
 };
 </script>
+
