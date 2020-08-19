@@ -8,7 +8,11 @@
           <PostCardForm/>
       </v-col>
       <v-col cols='4'>
-      <MypageCardForm/>
+      <MypageCardForm>
+        <template #slotTest>
+          <h3>ポストページのカード</h3>
+        </template>
+      </MypageCardForm>
 
       </v-col>
     </v-row>

@@ -8,6 +8,7 @@
       <v-list-item-content>
         <v-list-item-title class="headline">Our Changing Planet</v-list-item-title>
         <v-list-item-subtitle>by Kurt Wagner</v-list-item-subtitle>
+        <slot name='slotTest'></slot>
       </v-list-item-content>
     </v-list-item>
 
